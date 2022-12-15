@@ -78,7 +78,7 @@ export default Home;
 
 export async function getServerSideProps() {
   const exploreData = await fetch(
-    "./utilis/smallCard.ts"
+    "https://hasinduperera12.github.io/Application-Programming-Interface/smallCardData.json"
   ).then((res) => res.json());
 
   const cardData = await fetch(
